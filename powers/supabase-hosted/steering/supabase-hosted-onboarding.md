@@ -2,7 +2,7 @@
 
 Before using Supabase MCP, ensure the following are installed and running:
 - Docker
-- (Optionla) A Node.js package manager like npm, pnpm, bun, etc.
+- (Optional) A Node.js package manager like npm, pnpm, bun, etc.
 - Supabase CLI
 
 ## Docker Desktop
@@ -24,24 +24,37 @@ Supabase CLI should ideally be versioned as a project dependency in `package.jso
 
 You MUST refer to `supabase-cli.md` and follow setup before proceeding.
 
-# MCP setup (CLI)
+1. Verify CLI is installed
+2. Verify CLI is linked to a hosted project by checking `supabase/.temp/project-ref`
+3. If CLI is not linked, instruct the user to run `supabase link`
 
-Supabase CLI runs an MCP server on `http://127.0.0.1:54321/mcp`. If the user has difficulty connecting, you can verify this URL with `supabase status` (without `--local` flag). Tools executing using this server affect only the local Supabase instance, but changes can be synced to a hosted instance using the CLI.
+# MCP setup (Hosted)
 
-The local MCP server supports a subset of the functionality of our hosted MCP server, since some features like edge functions are managed through the file system in local development, or may otherwise be unsupported in CLI.
+Supabase hosts an MCP server on `https://mcp.supabase.com/mcp`.
 
-Since you're working in a local editor, prefer development using this local Supabase instance. When running Supabase CLI commands, include the `--local` flag where possible to explicitly target the local instance.
+Options may configured with additional query parameters:
+- `read_only`: Used to restrict the server to read-only queries and tools. Recommended by default.
+- `project_ref`: Used to scope the server to a specific project. Recommended by default. If you omit this, the server will have access to all projects in your Supabase account.
+- `features`: Used to specify which tool groups to enable.
+
+Depending on which options the user has configured, tool behavior may vary. Refer the user to our MCP docs if they need help configuring these.
+
+Tools executing using this server affect the hosted Supabase project(s), and changes can be synced to the filesystem using Supabase CLI.
+
+Although you're working in a local editor, prefer development using this hosted Supabase instance and use Supabase CLI to sync changes to the local `supabase/` folder.
+
+The user will likely have linked their Supabase CLI to a development project.
+You can find the linked project ref in `supabase/.temp/project-ref`, use this as the `project_id` in MCP tool calls.
 
 # Initial setup checklist
 
-1. Ensure Docker Desktop is running
-2. Ensure Supabase CLI is installed
+1. Ensure Supabase CLI is installed
+2. Ensure Supabase CLI is linked to a hosted project
 3. Initialize a git repo with `git init` if not already within a repo
 4. Generate a basic `.gitignore` if not already present with `npx gitignore node` (substitute preferred package manager runner)
 5. Run `supabase init --yes` to initialize the project (creates `supabase/` directory)
-6. Run `supabase start` to start the local Supabase stack
-7. Call MCP tools to get project URL and anon/publishable key
-8. Create `.env.local` file with:
+6. Call MCP tools to get project URL and anon/publishable key
+7. Create `.env.local` file with:
 ```
    NEXT_PUBLIC_SUPABASE_URL=<project url>
    NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=<anon or publishable key>
@@ -49,5 +62,4 @@ Since you're working in a local editor, prefer development using this local Supa
 
 # Troubleshooting
 
-- Supabase containers can't start due to port conflict: Stop existing containers with `supabase stop --all`
-- MCP tools not available or connection fails: Instruct user to reconnect MCP server in Kiro's MCP Servers View (run "Kiro: Focus on MCP Servers View" from VS Code command palette)
+- MCP tools not available or connection fails: Instruct user to reconnect MCP server in Kiro's MCP Servers View (run "Kiro: Focus on MCP Servers View" from VS Code command palette) and follow the Supabase login flow in the browser
