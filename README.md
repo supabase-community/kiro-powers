@@ -5,6 +5,8 @@
 - `supabase-local` tuned for local Supabase development
 - `supabase-hosted` tuned for development with a hosted Supabase project
 
+Files shared across powers are symlinked from `shared/`
+
 ## Usage
 
 To install a power:
