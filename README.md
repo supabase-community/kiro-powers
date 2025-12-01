@@ -1,13 +1,14 @@
-Following structure of https://github.com/7e11/stunning-sniffle
+# Supabase Kiro Powers
 
-Latest powers:
+## Contents:
 
-- `supabase-local`: consolidated power for local development 
-- `supabase-hosted`: consolidated power for hosted development
+- `supabase-local` tuned for local Supabase development
+- `supabase-hosted` tuned for development with a hosted Supabase project
 
-Archived powers:
+## Usage
 
-- `supabase-matt-hosted`: from https://github.com/mattrossman/kiro-supabase-hosted-playground
-- `supabase-matt-local`: from https://github.com/mattrossman/kiro-supabase-playground
-- `supabase-aws-local-recommended`: from Kiro's recommended power registry https://github.com/7e11/stunning-sniffle
-- `supabase-aws-local`: from AWS team
+To install a power:
+
+- Open Kiro's Powers tab
+- "Install Custom Power" → "Import power from a folder"
+- Select one of the folders within `powers/`
