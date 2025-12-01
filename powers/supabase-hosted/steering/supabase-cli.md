@@ -1,0 +1,1 @@
+../../../shared/supabase-cli.md

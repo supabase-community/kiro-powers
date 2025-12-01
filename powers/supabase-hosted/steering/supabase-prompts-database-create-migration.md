@@ -1,0 +1,1 @@
+../../../shared/supabase-prompts-database-create-migration.md
