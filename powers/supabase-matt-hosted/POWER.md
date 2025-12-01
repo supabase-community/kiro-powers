@@ -1,5 +1,9 @@
 ---
-description: Local development with Supabase CLI and its integrated MCP server
+name: "supabase"
+version: "1.0.0"
+displayName: "Supabase with hosted stack"
+description: "Build fullstack applications with Supabase's Postgres database, authentication, storage, and real-time subscriptions"
+keywords: ["database", "postgres", "auth", "storage", "realtime", "backend", "supabase", "rls"]
 ---
 
 ## When to Load Steering Files
