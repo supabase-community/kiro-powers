@@ -1,0 +1,1 @@
+../../../shared/supabase-prompts-edge-functions.md

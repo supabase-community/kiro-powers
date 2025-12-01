@@ -1,0 +1,1 @@
+../../../shared/supabase-prompts-code-format-sql.md

@@ -1,0 +1,1 @@
+../../../shared/supabase-prompts-declarative-database-schema.md

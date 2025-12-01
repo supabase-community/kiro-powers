@@ -13,11 +13,11 @@ You must ALWAYS read `supabase-cli.md` to understand how to invoke Supabase CLI.
 In addition, consider these cases to read other steering files:
 
 - First time setup and troubleshooting Supabase project configuration → `supabase-local-onboarding.md`
-- Writing or formatting SQL code → `supabase-code-format-sql.md`
-- Writing Supabase Edge Functions (TypeScript/Deno) → `supabase-edge-functions.md`
-- Creating or modifying RLS policies → `supabase-database-rls-policies.md`
-- Creating PostgreSQL functions → `supabase-database-functions.md`
-- Working with declarative schema (`supabase/schemas/` directory) → `supabase-declarative-database-schema.md`
-- Creating migration files manually (`supabase/migrations/` directory) → `supabase-database-create-migration.md`
-- Setting up or modifying Next.js authentication with Supabase SSR → `supabase-nextjs-supabase-auth.md`
-- Implementing realtime features (broadcast, presence, channels, subscriptions) → `supabase-use-realtime.md`
+- Writing or formatting SQL code → `supabase-prompts-code-format-sql.md`
+- Writing Supabase Edge Functions (TypeScript/Deno) → `supabase-prompts-edge-functions.md`
+- Creating or modifying RLS policies → `supabase-prompts-database-rls-policies.md`
+- Creating PostgreSQL functions → `supabase-prompts-database-functions.md`
+- Working with declarative schema (`supabase/schemas/` directory) → `supabase-prompts-declarative-database-schema.md`
+- Creating migration files manually (`supabase/migrations/` directory) → `supabase-prompts-database-create-migration.md`
+- Setting up or modifying Next.js authentication with Supabase SSR → `supabase-prompts-nextjs-supabase-auth.md`
+- Implementing realtime features (broadcast, presence, channels, subscriptions) → `supabase-prompts-use-realtime.md`
