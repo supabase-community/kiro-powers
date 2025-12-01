@@ -2,11 +2,7 @@
   "mcpServers": {
     "supabase": {
       "url": "https://mcp.supabase.com/mcp",
-      "disabled": false,
-      "autoApprove": [
-        "list_tables",
-        "get_advisors"
-      ]
+      "disabled": false
     }
   }
 }
