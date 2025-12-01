@@ -52,6 +52,10 @@ You can find the linked project ref in `supabase/.temp/project-ref`, use this as
    NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=<anon or publishable key>
 ```
 
+# Hooks setup
+
+After initial setup you MUST refer to `supabase-hooks.md` and follow instructions to set up Kiro hooks.
+
 # Troubleshooting
 
 - MCP tools not available or connection fails: Instruct user to reconnect MCP server in Kiro's MCP Servers View (run "Kiro: Focus on MCP Servers View" from VS Code command palette) and follow the Supabase login flow in the browser

@@ -47,6 +47,10 @@ Since you're working in a local editor, prefer development using this local Supa
    NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=<anon or publishable key>
 ```
 
+# Hooks setup
+
+After initial setup you MUST refer to `supabase-hooks.md` and follow instructions to set up Kiro hooks.
+
 # Troubleshooting
 
 - Supabase containers can't start due to port conflict: Stop existing containers with `supabase stop --all`
