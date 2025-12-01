@@ -12,7 +12,7 @@ You must ALWAYS read `supabase-cli.md` to understand how to invoke Supabase CLI.
 
 In addition, consider these cases to read other steering files:
 
-- First time setup and troubleshooting Supabase project configuration → `supabase-onboarding.md`
+- First time setup and troubleshooting Supabase project configuration → `supabase-local-onboarding.md`
 - Writing or formatting SQL code → `supabase-code-format-sql.md`
 - Writing Supabase Edge Functions (TypeScript/Deno) → `supabase-edge-functions.md`
 - Creating or modifying RLS policies → `supabase-database-rls-policies.md`
