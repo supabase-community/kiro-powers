@@ -17,8 +17,9 @@ Supabase CLI should ideally be versioned as a project dependency in `package.jso
 You MUST refer to `supabase-cli.md` and follow setup before proceeding.
 
 1. Verify CLI is installed
-2. Verify CLI is linked to a hosted project by checking `supabase/.temp/project-ref`
-3. If CLI is not linked, instruct the user to run `supabase link`
+2. Verify CLI is logged in and linked to a project with `supabase projects list`
+3. If CLI is not logged in, run `supabase login`
+4. If CLI is logged in but no project is linked, ask which project the user wants to link to then run `supabase link --project-ref <id>`
 
 # MCP setup (Hosted)
 
@@ -41,7 +42,7 @@ You can find the linked project ref in `supabase/.temp/project-ref`, use this as
 # Initial setup checklist
 
 1. Ensure Supabase CLI is installed
-2. Ensure Supabase CLI is linked to a hosted project
+2. Ensure Supabase CLI is logged in and linked to a hosted project
 3. Initialize a git repo with `git init` if not already within a repo
 4. Generate a basic `.gitignore` if not already present with `npx gitignore node` (substitute preferred package manager runner)
 5. Run `supabase init --yes` to initialize the project (creates `supabase/` directory)
