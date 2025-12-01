@@ -2,7 +2,7 @@
 
 Before using Supabase MCP, ensure the following are installed and running:
 - Docker
-- (Optionla) A Node.js package manager like npm, pnpm, bun, etc.
+- (Optional) A Node.js package manager like npm, pnpm, bun, etc.
 - Supabase CLI
 
 ## Docker Desktop
