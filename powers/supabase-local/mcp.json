@@ -5,7 +5,6 @@
       "disabled": false,
       "autoApprove": [
         "list_tables",
-        "get_advisors",
         "get_advisors"
       ]
     }
