@@ -1,16 +1,8 @@
 # Prerequisites
 
 Before using Supabase MCP, ensure the following are installed and running:
-- Docker
 - (Optional) A Node.js package manager like npm, pnpm, bun, etc.
 - Supabase CLI
-
-## Docker Desktop
-
-Supabase CLI requires Docker to run the local development stack.
-
-1. Verify with: `docker version && echo "Docker is installed and running"`
-2. If Docker is not installed or not running, DO NOT proceed with Supabase setup. Direct the user to install Docker Desktop first: https://www.docker.com/products/docker-desktop
 
 ## Node.js package manager
 
