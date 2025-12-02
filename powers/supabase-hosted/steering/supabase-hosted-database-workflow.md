@@ -22,7 +22,7 @@ To update tables:
 
 1. Call MCP `list_tables` to inspect the current schema
 2. Call `apply_migration` with desired changes
-3. Call MCP `get_advisors` to find and fix security/performance issues as needed with further migrations
+3. Call MCP `get_advisors` to find and fix "security" and "performance" issues as needed with further migrations
 4. Sync new migration(s) to `supabase/migrations/` locally with `supabase migration fetch --yes`
 5. Generate updated types and review codebase to align usage
 

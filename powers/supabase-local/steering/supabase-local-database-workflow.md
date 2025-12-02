@@ -15,7 +15,7 @@ Eventually the user should commit their schema changes to a local migration file
 Steps:
 
 1. Ensure the user has had a turn to verify functionality of changes.
-2. Before generating a migration, check security/performance advisors with `get_advisors` to ensure the current schema doesn't have issues.
+2. Before generating a migration, check "security" and "performance" advisors with `get_advisors` to ensure the current schema doesn't have issues.
 3. Use `supabase db diff --local` to inspect schema changes to inform the migration name
 4. Use `supabase db pull [migration name] --local --yes` to generate a migration file (including `--yes` auto accepts the CLI's prompt to update the migration history table)
 

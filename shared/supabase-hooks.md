@@ -13,7 +13,7 @@ Add a hook to .kiro/hooks/review-advisors.kiro.hook
   },
   "then": {
     "type": "askAgent",
-    "prompt": "Activate the Supabase power, then execute `get_advisors` via MCP to check for performance and security concerns"
+    "prompt": "Activate the Supabase power, then execute `get_advisors` via MCP to check for \"performance\" and \"security\" concerns"
   }
 }
 ```
