@@ -1,3 +1,11 @@
+# MCP (CLI))
+
+Supabase CLI runs an MCP server on `http://127.0.0.1:54321/mcp`. If the user has difficulty connecting, you can verify this URL with `supabase status` (without `--local` flag). Tools executing using this server affect only the local Supabase instance, but changes can be synced to a hosted instance using the CLI.
+
+The local MCP server supports a subset of the functionality of our hosted MCP server, since some features like edge functions are managed through the file system in local development, or may otherwise be unsupported in CLI.
+
+Since you're working in a local editor, prefer development using this local Supabase instance. When running Supabase CLI commands, include the `--local` flag where possible to explicitly target the local instance.
+
 # Schema managament
 
 During development, you can iterate on the database schema with `execute_sql`. Prefer this over `apply_migration` during development to avoid creating noisy migrations or mismatches between local migration files and database migration history.

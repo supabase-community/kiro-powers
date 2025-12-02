@@ -8,7 +8,11 @@ keywords: ["database", "postgres", "auth", "storage", "realtime", "backend", "su
 
 # When to Load Steering Files
 
+You MAY read multiple steering files if multiple topics are relevant.
 You must ALWAYS read `supabase-cli.md` to understand how to invoke Supabase CLI.
+You must ALWAYS read `supabase-local-database-workflow.md` to understand how to interact with the database through CLI and MCP.
+**IMPORTANT** You CANNOT perform actions (MCP tools, reading/writing files) before reading relevant steering file(s).
+
 
 In addition, consider these cases to read other steering files:
 

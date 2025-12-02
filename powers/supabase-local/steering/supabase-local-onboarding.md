@@ -4,6 +4,7 @@ Before using Supabase MCP, ensure the following are installed and running:
 - Docker
 - (Optional) A Node.js package manager like npm, pnpm, bun, etc.
 - Supabase CLI
+- MCP
 
 ## Docker Desktop
 
@@ -24,13 +25,9 @@ Supabase CLI should ideally be versioned as a project dependency in `package.jso
 
 You MUST refer to `supabase-cli.md` and follow setup before proceeding.
 
-# MCP setup (CLI)
+## MCP
 
-Supabase CLI runs an MCP server on `http://127.0.0.1:54321/mcp`. If the user has difficulty connecting, you can verify this URL with `supabase status` (without `--local` flag). Tools executing using this server affect only the local Supabase instance, but changes can be synced to a hosted instance using the CLI.
-
-The local MCP server supports a subset of the functionality of our hosted MCP server, since some features like edge functions are managed through the file system in local development, or may otherwise be unsupported in CLI.
-
-Since you're working in a local editor, prefer development using this local Supabase instance. When running Supabase CLI commands, include the `--local` flag where possible to explicitly target the local instance.
+You MUST refer to `supabase-local-database-workflow.md` to understand MCP usage and setup.
 
 # Initial setup checklist
 

@@ -1,3 +1,21 @@
+# MCP (Hosted)
+
+Supabase hosts an MCP server on `https://mcp.supabase.com/mcp`.
+
+Options may configured with additional query parameters:
+- `read_only`: Used to restrict the server to read-only queries and tools. Recommended by default.
+- `project_ref`: Used to scope the server to a specific project. Recommended by default. If you omit this, the server will have access to all projects in your Supabase account.
+- `features`: Used to specify which tool groups to enable.
+
+Depending on which options the user has configured, tool behavior may vary. Refer the user to our MCP docs if they need help configuring these.
+
+Tools executing using this server affect the hosted Supabase project(s), and changes can be synced to the filesystem using Supabase CLI.
+
+Although you're working in a local editor, prefer development using this hosted Supabase instance and use Supabase CLI to sync changes to the local `supabase/` folder.
+
+The user will likely have linked their Supabase CLI to a development project.
+You can find the linked project ref in `supabase/.temp/project-ref`, use this as the `project_id` in MCP tool calls.
+
 # Schema managament
 
 To update tables:
