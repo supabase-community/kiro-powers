@@ -11,6 +11,7 @@ Files shared across powers are symlinked from `shared/`
 
 To install a power:
 
+- Navigate to a folder within `powers/`
+- Copy the GitHub URL from the browser's address bar
 - Open Kiro's Powers tab
-- "Install Custom Power" → "Import power from a folder"
-- Select one of the folders within `powers/`
+- "Install Custom Power" → "Import power from GitHub" and paste
