@@ -1,17 +1,8 @@
 # Prerequisites
 
 Before using Supabase MCP, ensure the following are installed and running:
-- (Optional) A Node.js package manager like npm, pnpm, bun, etc.
 - Supabase CLI
 - MCP
-
-## Node.js package manager
-
-Supabase CLI should ideally be versioned as a project dependency in `package.json` "devDependencies" and managed with a Node.js package manager such as npm, pnpm, bun, etc.
-
-1. Check if the project uses an existing package manager by looking for common lockfile formats.
-2. If a package manager is not already used in the workspace, ask the user which tool they prefer to inform further installations
-3. Initialize `package.json` with the appropriate tool (e.g. `npm init -y`, `pnpm init -y`, etc.)
 
 ## Supabase CLI
 
